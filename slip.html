@@ -11,8 +11,10 @@
         <link rel="stylesheet" href="./lib/normalize.css" />
         <style>
             html,body{height:100%;width:100%}
-            .pages{list-style:none;height:100%;width:100%;}
-            .page{height:100%;width:100%}
+            ul{padding:0;margin:0;}
+            .container{height:100%;width:100%;position:relative;overflow:hidden}
+            .pages{list-style:none;height:100%;width:100%;position:absolute;}
+            .page{height:100%;width:100%;}
             .page:nth-of-type(1){
                 background-color:lightblue;
             }
@@ -28,15 +30,18 @@
         </style>
     </head>
     <body>
-        <ul class="pages">
+        <div class="container">
+            <ul class="pages">
             <li class="page"></li>
             <li class="page"></li>
             <li class="page"></li>
             <li class="page"></li>
         </ul>
+        </div>
         <script src="./lib/slip.min.js"></script>
         <script>
-            Slip(document.querySelector('.pages'),'x').slider('.page');
+            //Slip(document.querySelector('.pages'),'y').webapp('.page');
+            Slip(document.querySelector('.pages'),'x').webapp('.page');            
         </script>
     </body>
     </html>
