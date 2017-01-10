@@ -1,0 +1,42 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1.0,width=device-width,user-scalable=0,maximum-scale=1.0" />
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="yes" name="apple-touch-fullscreen">
+        <meta content="telephone=no" name="format-detection">
+        <meta content="black" name="apple-mobile-web-app-status-bar-style">
+        <title>Document</title>
+        <link rel="stylesheet" href="./lib/normalize.css" />
+        <style>
+            html,body{height:100%;width:100%}
+            .pages{list-style:none;height:100%;width:100%;}
+            .page{height:100%;width:100%}
+            .page:nth-of-type(1){
+                background-color:lightblue;
+            }
+            .page:nth-of-type(2){
+                background-color:lightsalmon;
+            }
+            .page:nth-of-type(3){
+                background-color:lightseagreen;
+            }
+            .page:nth-of-type(4){
+                background-color:lightskyblue;
+            }
+        </style>
+    </head>
+    <body>
+        <ul class="pages">
+            <li class="page"></li>
+            <li class="page"></li>
+            <li class="page"></li>
+            <li class="page"></li>
+        </ul>
+        <script src="./lib/slip.min.js"></script>
+        <script>
+            Slip(document.querySelector('.pages'),'x').slider('.page');
+        </script>
+    </body>
+    </html>
