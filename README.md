@@ -1,2 +1,2 @@
-# PageTransition
+# page-transition
 page transition effect

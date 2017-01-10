@@ -1,0 +1,23 @@
+{
+  "name": "page-transition",
+  "version": "1.0.0",
+  "description": "page transition demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ygtzz/PageTransition.git"
+  },
+  "keywords": [
+    "page",
+    "transition"
+  ],
+  "author": "ygtzz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ygtzz/PageTransition/issues"
+  },
+  "homepage": "https://github.com/ygtzz/PageTransition#readme"
+}
